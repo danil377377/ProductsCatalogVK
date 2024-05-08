@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HorizontalInfoBorder"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HorizontalTitleBorder"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ImageTopBorder"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ImageBottomBorder"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VerticalInfoBorder"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/product_icon"
+        app:layout_constraintDimensionRatio="H,16:9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ImageTopBorder"
+        app:layout_constraintEnd_toStartOf="@id/VerticalInfoBorder"
+        app:layout_constraintBottom_toBottomOf="@id/ImageBottomBorder">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:text="Title"
+        app:layout_constraintStart_toStartOf="@id/VerticalInfoBorder"
+        app:layout_constraintBottom_toBottomOf="@id/HorizontalTitleBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/VerticalInfoBorder"
+        app:layout_constraintBottom_toBottomOf="@id/HorizontalInfoBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/HorizontalTitleBorder"
+        android:layout_marginStart="10dp"
+        android:text="Dеscription"
+
+        android:textSize="12sp"
+        >
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
